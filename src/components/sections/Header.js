@@ -44,7 +44,7 @@ const Header = (props) => {
   const [show, setShow] = React.useState(false);
   const toggleMenu = () => setShow(!show);
   const { toggleColorMode } = useColorMode();
-  const text = useColorModeValue('dark', 'light');
+  const text = useColorModeValue('dark', 'red');
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
 
   return (
@@ -63,7 +63,7 @@ const Header = (props) => {
       <Flex align="center">
         <Logo
           w="100px"
-          color={["white", "white", "primary.500", "primary.500"]}
+          color="#901432"
         />
       </Flex>
 
@@ -81,19 +81,21 @@ const Header = (props) => {
           direction={["column", "row", "row", "row"]}
           pt={[4, 4, 0, 0]}
         >
-          <MenuItem to="/">Home</MenuItem>
-          <MenuItem to="/how">How It works </MenuItem>
-          <MenuItem to="/faetures">Features </MenuItem>
-          <MenuItem to="/pricing">Pricing </MenuItem>
-          <MenuItem to="/signup" isLast>
+          <MenuItem  color="#D14475" to="/">Home</MenuItem>
+          <MenuItem  color="#D14475" to="/">How It works </MenuItem>
+          <MenuItem  color="#D14475" to="/">Features </MenuItem>
+          <MenuItem  color="#D14475" to="/">Pricing </MenuItem>
+          <MenuItem to="/" isLast>
        
             <Button
-              size="sm"
+              size="md"
               rounded="md"
+           
               color={["primary.500", "primary.500", "white", "white"]}
-              bg={["white", "white", "primary.500", "primary.500"]}
+              
+              bg="#D14475"
               _hover={{
-                bg: ["primary.100", "primary.100", "primary.600", "primary.600"]
+                bg: "#A57E56"
               }}
             >
               Create Account
@@ -105,7 +107,7 @@ const Header = (props) => {
       fontSize="lg"
       aria-label={`Switch to ${text} mode`}
       variant="ghost"
-      color="current"
+      color="#AA714D"
       marginLeft="2"
       onClick={toggleColorMode}
       icon={<SwitchIcon />}
