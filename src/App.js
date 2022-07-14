@@ -1,32 +1,13 @@
-import React from 'react';
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
-} from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
 
-function App() {
+export default function App() {
   return (
-    <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}> 
-            <Text>
-           This is the landing page  
-            </Text>
-            
-          </VStack>
-        </Grid>
-      </Box>
-    </ChakraProvider>
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Landing />}/>
+  </Routes>
+  </BrowserRouter>
   );
 }
-
-export default App;
