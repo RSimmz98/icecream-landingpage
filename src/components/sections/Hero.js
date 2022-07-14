@@ -39,7 +39,7 @@ export default function Hero({
           as="h1"
           size="xl"
           fontWeight="bold"
-          color="primary.800"
+          color="#D14475"
           textAlign={["center", "center", "left", "left"]}
         >
           {title}
@@ -47,7 +47,7 @@ export default function Hero({
         <Heading
           as="h2"
           size="md"
-          color="primary.800"
+          color="#FDCD3B"
           opacity="0.8"
           fontWeight="normal"
           lineHeight={1.5}
@@ -57,21 +57,22 @@ export default function Hero({
         </Heading>
         <Link to={ctaLink}>
           <Button
-            colorScheme="primary"
+            bg="#D14475"
             borderRadius="8px"
             py="4"
             px="4"
             lineHeight="1"
-            size="md"
+            size="lg" 
+            color={["primary.500", "primary.500", "white", "white"]}
           >
-            {ctaText}
+          Create your account now
           </Button>
         </Link>
         <Text
-          fontSize="xs"
+          fontSize="sm"
           mt={2}
           textAlign="center"
-          color="primary.800"
+          color="#FFA33C"
           opacity="0.6"
         >
           No credit card required.
