@@ -63,7 +63,7 @@ export default function Hero({
             px="4"
             lineHeight="1"
             size="lg" 
-            color={["primary.500", "primary.500", "white", "white"]}
+            color={["white", "white", "white", "white"]}
           >
           Create your account now
           </Button>

@@ -56,15 +56,15 @@ const Header = (props) => {
       w="100%"
       mb={8}
       p={8}
-      bg={["primary.500", "primary.500", "transparent", "transparent"]}
-      color={["white", "white", "primary.700", "primary.700"]}
+      bg={["#901432", "#9014329", "transparent", "transparent"]}
+      color={["white", "white", "#D14475", "#D14475"]}
       {...props}
     >
-      <Flex align="center">
+      <Flex  align="center">
         <Logo
           w="100px"
-          color="#901432"
-        />
+         color="#AA714D"
+          />
       </Flex>
 
       <Box display={{ base: "block", md: "none" }} onClick={toggleMenu}>
@@ -81,17 +81,17 @@ const Header = (props) => {
           direction={["column", "row", "row", "row"]}
           pt={[4, 4, 0, 0]}
         >
-          <MenuItem  color="#D14475" to="/">Home</MenuItem>
-          <MenuItem  color="#D14475" to="/">How It works </MenuItem>
-          <MenuItem  color="#D14475" to="/">Features </MenuItem>
-          <MenuItem  color="#D14475" to="/">Pricing </MenuItem>
+          <MenuItem  color="#white" to="/">Home</MenuItem>
+          <MenuItem  color="#white" to="/">How It works </MenuItem>
+          <MenuItem  color="#white" to="/">Features </MenuItem>
+          <MenuItem  color="#white" to="/">Pricing </MenuItem>
           <MenuItem to="/" isLast>
        
             <Button
               size="md"
               rounded="md"
            
-              color={["primary.500", "primary.500", "white", "white"]}
+              color={["white", "white", "white"]}
               
               bg="#D14475"
               _hover={{
